@@ -26,6 +26,9 @@ for epoch in range(1000):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
+    
+
+    
 plt.figure(figsize=(10,6),dpi=120)
 plt.plot(epoch_list,loss_list,"b-o",label="train loss",linewidth=2,markersize=3)
 plt.title("epoch-loss figure")
@@ -34,3 +37,4 @@ plt.ylabel("loss",fontsize=12)
 plt.legend(fontsize=11)
 plt.tight_layout()
 plt.show()
+
